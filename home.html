@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LearnBit - Lección diaria</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>LearnBit</h1>
+      <button id="logoutBtn" class="btn-logout">Cerrar Sesión</button>
+    </header>
+
+    <main>
+      <section class="lesson-section card">
+        <h2>Lección del día</h2>
+        <div id="lessonContent" class="lesson-content"></div>
+        <button id="completeBtn" class="btn-complete">Marcar como completado</button>
+        <p id="statusMsg" class="status-msg"></p>
+      </section>
+
+      <section class="progress-section card">
+        <h3>Tu progreso</h3>
+        <ul id="progressList" class="progress-list"></ul>
+      </section>
+    </main>
+    
+  </div>
+  
+
+  <script src="home.js"></script>
+  
+</body>
+
+</html>
