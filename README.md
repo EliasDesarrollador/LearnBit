@@ -25,9 +25,14 @@ La Pagina Principal o Home
 - Página de inicio con mensajes motivadores
 - Sección para anotar aprendizajes diarios
 - Diseño responsive
+# 🚀Deploy del Proyecto
+![Screenshot 2025-07-02 134844](https://github.com/user-attachments/assets/f48c6384-cf9a-4e3b-bfb7-b089cf96254e)
 
-## 🚀💻📚  Probar el Proyecto 
- - Visualizar y probar el Proyecto desde el navegador 
+
+
+## 💻📚  Probar el Proyecto 
+ - Visualizar y probar el Proyecto desde el navegador
+   Enlace: https://learnbit.netlify.app/
 
 ## 📦 Cómo instalar / correr el proyecto en Local
 
