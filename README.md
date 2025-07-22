@@ -39,5 +39,5 @@ La Pagina Principal o Home
 1. Cloná el repo:
    ```bash
    git clone https://github.com/tuUsuario/tuRepositorio.git
-
+2- Crea una carpeta en Local o agrega y selecciona dicha carpeta.
 
