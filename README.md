@@ -25,6 +25,16 @@ La Pagina Principal o Home
 - Página de inicio con mensajes motivadores
 - Sección para anotar aprendizajes diarios
 - Diseño responsive
+- Seccion de Libros 📚
+## 💻 Página de libros
+<img width="698" height="706" alt="Screenshot 2025-08-05 003219" src="https://github.com/user-attachments/assets/18169679-c0a7-4504-9385-9fed7b1d5d89" />
+
+ # 💻📚 Sección de libros
+<img width="800" height="855" alt="image" src="https://github.com/user-attachments/assets/a6ce5977-8d75-4f52-bc29-3323c6045326" />
+
+
+
+  
 # 🚀Deploy del Proyecto
 ![Screenshot 2025-07-02 134844](https://github.com/user-attachments/assets/f48c6384-cf9a-4e3b-bfb7-b089cf96254e)
 
