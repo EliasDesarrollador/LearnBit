@@ -200,3 +200,23 @@ main {
   }
 }
 
+/*Libros recomendados */
+.btn-books, .btn-back {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.book-list li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.book-list a {
+  text-decoration: none;
+  color: #333;
+}

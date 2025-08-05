@@ -152,3 +152,8 @@ logoutBtn.addEventListener('click', () => {
   localStorage.removeItem('loggedInUser');
   window.location.href = 'index.html';
 });
+
+// === BOTÓN DE LIBROS RECOMENDADOS ===
+document.getElementById("booksBtn").addEventListener("click", function() {
+  window.location.href = "libros.html"; // Esta es la nueva página
+});
