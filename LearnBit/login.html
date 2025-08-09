@@ -1,47 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Iniciar Sesión - LearnBit</title>
-  <link rel="stylesheet" href="estilo.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - LearnBit</title>
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
+
   <h2>Iniciar Sesión</h2>
   <form id="loginForm">
-    <label for="username">Usuario</label>
-    <input type="text" id="username" required />
+    <label>Usuario</label>
+    <input type="text" id="loginUsername" required>
 
-    <label for="password">Contraseña</label>
-    <input type="password" id="password" required />
+    <label>Contraseña</label>
+    <input type="password" id="loginPassword" required>
 
     <button type="submit">Ingresar</button>
-    <p id="errorMsg" style="color: red;"></p>
+    <p id="loginMsg"></p>
   </form>
 
   <script>
     const loginForm = document.getElementById("loginForm");
-    const errorMsg = document.getElementById("errorMsg");
+    const loginMsg = document.getElementById("loginMsg");
 
-    loginForm.addEventListener("submit", function (e) {
+    loginForm.addEventListener("submit", function(e) {
       e.preventDefault();
-
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value.trim();
+      const username = document.getElementById("loginUsername").value.trim();
+      const password = document.getElementById("loginPassword").value.trim();
 
       const storedData = JSON.parse(localStorage.getItem("learnbit_user"));
 
       if (!storedData) {
-        errorMsg.textContent = "No hay usuarios registrados.";
+        loginMsg.textContent = "No hay usuarios registrados.";
         return;
       }
 
       if (username === storedData.username && password === storedData.password) {
-        window.location.href = "home.html";
+        loginMsg.style.color = "green";
+        loginMsg.textContent = "Login exitoso ✅";
+        localStorage.setItem("learnbit_logged_in", "true");
+        setTimeout(() => {
+          window.location.href = "home.html";
+        }, 1000);
       } else {
-        errorMsg.textContent = "Usuario o contraseña incorrectos.";
+        loginMsg.textContent = "Usuario o contraseña incorrectos.";
       }
     });
   </script>
+
 </body>
 </html>
