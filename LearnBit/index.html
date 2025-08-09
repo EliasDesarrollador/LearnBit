@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login - LearnBit</title>
-    <link rel="stylesheet" href="estilo.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LearnBit - Bienvenido</title>
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-    <div class="login-container">
-        <h2>Iniciar Sesión</h2>
-        <form id="loginForm">
-            <label for="username">Usuario</label>
-            <input type="text" id="username" name="username" required />
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" required />
+  <div class="container">
+    <header class="card">
+      <h1>📚 LearnBit</h1>
+      <p>Tu compañero diario para aprender y crecer 💡</p>
+    </header>
 
-            <button type="submit">Ingresar</button>
-        </form>
-        <p>¿No tenés cuenta? <a href="registro.html">Registrate acá</a></p>
-        <p id="error-msg" class="error"></p>
-    </div>
+    <main class="card">
+      <section class="presentacion">
+        <h2>¿Qué es LearnBit?</h2>
+        <p>LearnBit es una plataforma para aprender de forma constante y práctica, con lecciones diarias, recursos útiles, y libros para leer. Ideal para autodidactas y estudiantes como vos 🚀</p>
+      </section>
 
-    <script src="script.js"></script>
+      <section class="acciones">
+        <h3>Ingresá a tu cuenta</h3>
+        <button onclick="location.href='login.html'" class="btn">Iniciar Sesión</button>
+
+        <h3>¿Aún no tenés cuenta?</h3>
+        <button onclick="location.href='registro.html'" class="btn btn-secundario">Registrarse</button>
+      </section>
+    </main>
+
+    <footer class="card" style="text-align:center">
+      <p>© 2025 LearnBit — Desarrollado por Elías Ortiz 💻</p>
+    </footer>
+  </div>
+
 </body>
 </html>

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro - LearnBit</title>
+</head>
+<body>
+  <h2>Registro</h2>
+  <form id="registerForm">
+    <label for="username">Usuario</label>
+    <input type="text" id="username" required />
+
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" required />
+
+    <button type="submit">Registrarse</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("registerForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      const user = { username, password };
+      localStorage.setItem("learnbit_user", JSON.stringify(user));
+
+      alert("Usuario registrado correctamente");
+      window.location.href = "login.html"; // Redirige al login
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Iniciar Sesión - LearnBit</title>
+</head>
+<body>
+  <h2>Iniciar Sesión</h2>
+  <form id="loginForm">
+    <label for="username">Usuario</label>
+    <input type="text" id="username" required />
+
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" required />
+
+    <button type="submit">Ingresar</button>
+    <p id="errorMsg" style="color: red;"></p>
+  </form>
+
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    const errorMsg = document.getElementById("errorMsg");
+
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      const storedData = JSON.parse(localStorage.getItem("learnbit_user"));
+
+      if (!storedData) {
+        errorMsg.textContent = "No hay usuarios registrados.";
+        return;
+      }
+
+      if (username === storedData.username && password === storedData.password) {
+        window.location.href = "home.html";
+      } else {
+        errorMsg.textContent = "Usuario o contraseña incorrectos.";
+      }
+    });
+  </script>
+</body>
+</html>
