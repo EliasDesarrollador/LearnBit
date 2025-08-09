@@ -2,7 +2,8 @@
 
 LearnBit es una app web hecha con HTML, CSS y JavaScript que permite a los usuarios registrar lo que aprendieron cada día. Incluye login, registro y una interfaz amigable.
 
-# 🚀 LearnBit - Interfaz de inicio 
+
+ # 💻📚 LearnBit - Interfaz de inicio 
 
 
 
