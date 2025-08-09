@@ -6,6 +6,7 @@ LearnBit es una app web hecha con HTML, CSS y JavaScript que permite a los usuar
  # 💻📚 LearnBit - Interfaz de inicio 
 
 
+ /home/kali/Pictures/Screenshot_2025-08-05_20_52_04.png
 
 
 ## 📸 Capturas
